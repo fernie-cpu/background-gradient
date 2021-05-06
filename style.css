@@ -43,12 +43,16 @@ body {
 
 .globalnav {
   list-style: none;
-  transition: width 0.3s ease-in-out;
-  z-index: 0;
   display: flex;
   align-items: center;
   width: 845px;
   position: relative;
+}
+
+.globaknav,
+.globalsearch {
+  transition: width 0.3s ease-in-out;
+  z-index: 0;
 }
 
 .globalnav,
@@ -62,13 +66,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  align-self: center;
 }
 
 .globalnav li a {
   text-decoration: none;
   -webkit-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D")
     0 2 0 1;
+  border-width: 0 2px 0 1px;
   border-style: solid;
   outline: none;
   width: 100%;
@@ -91,6 +96,7 @@ body {
 }
 
 .globalnav li:first-child a {
+  border-width: 0 2px 0 0;
   border-radius: 4px 0 0 4px;
   -webkit-border-bottom-left-radius: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -104,7 +110,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 36px;
+  height: 30px;
+  margin: 3px 0;
 }
 
 .globalnav li.apple a {
